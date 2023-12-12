@@ -1,0 +1,148 @@
+.container{
+    background: rgba(255, 255, 255);
+    width: 420px;
+    height: 88vh;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.logo{
+    background-color: rgb(58, 239, 58);;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    border-radius: 50%;
+    border: 7px solid #0e0026;
+    z-index: 2;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: -44%;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-top-right-radius: 50%;
+    box-shadow: 0px -10px 0 0 #0e0026;
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    top: 46%;
+    right: -44%;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-top-left-radius: 50%;
+    box-shadow: 0px -10px 0 0 #0e0026;
+}
+.greet{
+    margin: 45px 20px 20px 20px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.greet h1{
+    margin: 10px;
+}
+.greet button{
+    height: 20px;
+    background: none;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.greet button img{
+    width: 20px;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-btn button{
+    background: rgb(58, 239, 58);
+    border: none;
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.txt-box input{
+    width: 300px;
+    height: 40px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 2px solid;
+    padding-left: 15px;
+}
+.task-list ul{
+    padding: 0;
+}
+.task-item{
+    list-style: none;
+    border: 2px solid black;
+    margin: 10px 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+.task-item span{
+    padding: 10px;
+    padding-top: 14px;
+}
+.del-btn{
+    background: none;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+.edit-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.task-item img{
+    height: 20px;
+}
+.add-task button{
+    color: white;
+    background-color: rgb(58, 239, 58);
+    width: 385px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+.popup{
+    /* position: fixed; */
+    background: white;
+    width: 450px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    border-radius: 7px;
+}
+.inner-popup h1{
+    margin: 4px;
+}
+.inner-popup input{
+    padding: 15px;
+    font-size: large;
+}
+.inner-popup button{
+    height: 54px;
+    width: 50px;
+    background-color: forestgreen;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
